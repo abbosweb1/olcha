@@ -1,0 +1,455 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.wrapperAll{
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3.5vw 0 0 0;
+}
+.navigationPanel{
+    width: 100%;
+    height: 5vw;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(248, 47, 47);
+    border-radius: 1vw;
+}
+.panelLeft{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.panelLeft>button{
+    width: 11vw;
+    height: 2.5vw;
+    border-radius: 1vw;
+    border: none;
+    font-size: 1.2vw;
+    color: rgb(248, 47, 47);
+    transition: 1s;
+}
+.panelLeft>button:hover{
+    background: none;
+    color: white;
+    border: 2px solid white;
+}
+.panelLeft>button:nth-child(2){
+    background: none;
+    color: white;
+    border: 2px solid white;
+}
+.panelLeft>button:nth-child(2):hover{
+    background: white;
+    color: rgb(248, 47, 47);
+}
+.panelLeft>a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2vw;
+    transition: 0.5s;
+}
+.panelLeft>a:hover{
+    color: gray;
+}
+.panelRight{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.panelRight>h1{
+    color: white;
+    font-size: 2vw;
+}
+.panelRight>button{
+    width: 11vw;
+    height: 2.5vw;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 1vw;
+    transition: 1s;
+}
+.panelRight>button:hover{
+    background: white;
+    color: rgb(248, 47, 47);
+}
+.tilWrapper{
+    display: flex;
+    width: 12vw;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+.tilWrapper>h1{
+    color: white;
+    font-size: 1.3vw;
+}
+.chiziq1{
+    width: 0vw;
+    height: 100%;
+    border: 1px solid gray;
+}
+.chiziq2{
+    width: 0vw;
+    height: 100%;
+    border: 1px solid gray;
+}
+.navbar{
+    width: 100%;
+    height: 5vw;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vw 0 0 0;
+}
+.navbar>img{
+    width: 12vw;
+}
+.katalog{
+    width: 15vw;
+    height: 4vw;
+    border: 2px solid black;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btns{
+    width: 100%;
+    /* border: 2px solid red; */
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.5s;
+}
+.btns>button{
+    font-size: 1vw;
+}
+.panelRight>button{
+    font-size: 1vw;
+}
+
+.inputBtn>input{
+    width: 35vw;
+    height: 4vw;
+    border-radius: 1vw;
+    background: rgb(252, 240, 240);
+}
+.inputBtn>button{
+    width: 5vw;
+    height: 3.5vw;
+    position: absolute;
+    background: red;
+    color: white;
+    font-size: 1vw;
+    border-radius: 1vw;
+    border: none;
+    left: 10vw;
+    top: 0.3vw;
+    left: 29.7vw;
+}
+.inputBtn{
+    position: relative;
+}
+.TSSK{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+/* .marketWrapper{
+    width: 200%;
+    height: auto;
+    border: 2px solid red;
+    margin: 3vw 0 0 0;
+    display: none;
+    transition: 1s;
+}
+.marketWrapper.show{
+    display: flex;
+}
+.marketWrapper.hide{
+    display: none;
+} */
+.marketWrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 12vw; /* Navbar pastida paydo bo'lishi uchun */
+    left: 5%;
+    width: 90%;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none; /* Yashirilgan holatda bo‘lsa, klik qilinmaydi */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 100;
+    /* border: 2px solid red; */
+    border-radius: 1vw;
+    background: rgb(226, 226, 226);
+}
+#navbarInput{
+    width: 35vw;
+    height: 4vw;
+    border-radius: 1vw;
+    padding-left: 1vw;
+    /* border: 2px solid red; */
+}::placeholder{
+    font-size: 1vw;
+}
+#olchaH1{
+    width: 15vw;
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    font-size: 1.5vw;
+    font-weight: 300;
+    color: red;
+    border: 2px solid red;
+    border-radius: 1vw;
+}
+.marketWrapper.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.marketWrapper.hide {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+}
+
+.market{
+    display: flex;
+    gap: 3vw;
+}
+#berkitish{
+    width: 4vw;
+    height: 3vw;
+    /* border: 2px solid red; */
+    border: none;
+    border-radius: 1vw;
+}
+#paydoBolish{
+    width: 6vw;
+    height: 3vw;
+    /* border: 2px solid red; */
+    border: none;
+    border-radius: 1vw;
+    transition: 0.5s;
+}
+.katalog:hover{
+    border: 1px solid red;
+    /* color: red; */
+}
+.katalog:hover>.btns>button{
+    color: red;
+}
+.katalog{
+    transition: 0.5s;
+}
+.TSSK>.taqqoslash>h2{
+    font-size: 1vw;
+    transition: 0.5s;
+}
+.TSSK>.taqqoslash{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.TSSK>.taqqoslash>h1{
+    font-size: 2vw;
+}
+.TSSK>.taqqoslash>h2:hover{
+    color: red;
+}
+.TSSK>.sevimlilar>h2{
+    font-size: 1vw;
+    transition: 0.5s;
+}
+.TSSK>.sevimlilar>h1{
+    font-size: 2vw;
+}
+.TSSK>.sevimlilar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+.TSSK>.sevimlilar>h2:hover{
+    color: red;
+}
+.TSSK>.savatcha>h2{
+    font-size: 1vw;
+    transition: 0.5s;
+}
+.TSSK>.savatcha>h1{
+    font-size: 2vw;
+}
+.TSSK>.savatcha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.TSSK>.savatcha>h2:hover{
+    color: red;
+}
+.TSSK>.kirish>button>h2{
+    font-size: 1vw;
+    transition: 0.5s;
+}
+.TSSK>.kirish>#KrBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+.TSSK>.kirish>button>h2:hover{
+    font-size: 1vw;
+    color: red;
+}
+.kirish-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.modal {
+    width: 30%;
+    height: 40dvh;
+    background: white;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.show-modal {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.wrapperH1Btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.close-btn {
+    width: 2vw;
+    height: 2vw;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    background: #ff4d4d;
+    color: white;
+    font-weight: bold;
+}
+
+.btnWrapper {
+    width: 100%;
+    height: 100dvh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.inputWrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputWrapper label {
+    font-size: 14px;
+    color: #333;
+}
+
+.inputWrapper input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+.inputWrapper input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.submit-btn {
+    width: 80%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #0056b3;
+}
+
+/* Modal chiqishda fonni asta-asta ko‘rinadigan qilish */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.kirish-btn>span{
+    font-size: 1.8vw
+}

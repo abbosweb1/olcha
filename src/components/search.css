@@ -1,0 +1,130 @@
+.inputBtn>input{
+    width: 60vw;
+    height: 5vw;
+    padding-left: 2vw;
+    /* border: 2px solid red; */
+    font-size: 1.3vw;
+    border: none;
+    outline: none;
+    background: none;
+}::placeholder{
+    font-size: 1.3vw;
+}
+.inputBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+.wrapperSearch{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.storka1{
+    width: 70vw;
+    height: 0;
+    border: 2px solid gray;
+    margin: 1vw 0 0 0;
+}
+#searchX{
+    width: 4vw;
+    height: 3vw;
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    font-size: 1.5vw;
+    transition: 0.2s;
+    text-decoration: none;
+    color: black;
+}
+#searchX:hover{
+    scale: 1.1;
+}
+
+
+
+
+
+.inputBtn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+  }
+  
+  .input {
+    padding: 8px 12px;
+    font-size: 16px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #searchX {
+    width: 5vw;
+    height: 3vw;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cardGrid {
+    width: 100%;
+    
+    gap: 2vw;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+  }
+  
+  .cardSearch {
+    width: 20vw;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cardSearch>h2{
+    font-size: 2vw;
+  }
+  .cardSearch>p{
+    font-size: 1vw;
+  }
+  
+  .card-img {
+    width: 15vw;
+    border-radius: 1vw;
+    /* border: 2px solid red; */
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .card-brand {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-model,
+  .card-price {
+    font-size: 14px;
+    color: #555;
+  }
+  
