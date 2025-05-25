@@ -24,13 +24,13 @@ function Cardlist(){
                       ❤️
                     </div>
                     <img src={card.avatar1} alt={card.brand} />
-                    <h2>{card.brand}</h2>
-                    <p>{card.model}</p>
-                    <p>{card.price}</p>
-                    <p>{card.storage}</p>
+                    <h2 id="nnn">{card.brand}</h2>
+                    <p id="ppp">{card.model}</p>
+                    <p id="ppp">{card.price}</p>
+                    <p id="ppp">{card.storage}</p>
                     <div className="card-buttons">
-                      <button className="view-btn" onClick={() => navigate(`/card/${card.id}`)}>View Detail</button>
-                      <button className="cart-btn" onClick={() => dispatch(addToCart(card))}>Add to Cart</button>
+                      <button id="bbb" className="view-btn" onClick={() => navigate(`/card/${card.id}`)}>View Detail</button>
+                      <button id="bbb" className="cart-btn" onClick={() => dispatch(addToCart(card))}>Add to Cart</button>
                     </div>
                   </div>
                   

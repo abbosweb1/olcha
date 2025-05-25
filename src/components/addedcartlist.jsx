@@ -19,14 +19,14 @@ const Addedcart = () => {
         <ul>
           <div className="containercart">
             {cartItems.map((item, idx) => (
-              <div className="itemcart" key={idx}>
+              <div id='itemcart' className="itemcart" key={idx}>
                 <img src={item.avatar1 || null} alt={item.brand} className="cart-image" />
-                <h3 className="cart-model">{item.model}</h3>
-                <p className="cart-price">Price: ${item.price}</p>
-                <p className="cart-quantity">
+                <h3 id='nnn' className="cart-model">{item.model}</h3>
+                <p id='ppp' className="cart-price">Price: ${item.price}</p>
+                <p id='ppp' className="cart-quantity">
                   <strong>Quantity:</strong> {item.quantity}
                 </p>
-                <button className="remove-btn" onClick={() => handleRemove(idx)}>
+                <button id='bbb' className="remove-btn" onClick={() => handleRemove(idx)}>
                   Remove
                 </button>
               </div>

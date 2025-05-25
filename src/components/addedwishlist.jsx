@@ -20,15 +20,15 @@ const AddedWishlist = () => {
         <ul>
           <div className="containerwisht">
             {cartItems.map((item, idx) => (
-              <div className="itesmwisht" key={item.id ?? idx}>
+              <div id='itesmwisht' className="itesmwisht" key={item.id ?? idx}>
                 <img
                   src={item.avatar1 || null}
                   alt={item.brand}
                   className="wishlist-image"
                 />
-                <h3 className="wishlist-model">{item.model}</h3>
-                <p className="wishlist-price">Price: ${item.price}</p>
-                <button
+                <h3 id='nnn' className="wishlist-model">{item.model}</h3>
+                <p id='ppp' className="wishlist-price">Price: ${item.price}</p>
+                <button id='bbb'
                   className="wishlist-remove-btn"
                   onClick={() => handleRemove(item.id)}
                 >

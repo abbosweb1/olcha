@@ -33,6 +33,48 @@
     border: 2px solid black;
     border-radius: 1vw;
 }
+@media only screen and (max-width:450px) {
+  .CardList{
+    flex-direction: column;
+  }  
+  .card{
+    width: 70vw;
+  }
+  .card>img{
+    width: 50vw;
+  }
+  #nnn{
+    font-size: 7vw;
+  }
+  #ppp{
+    font-size: 4vw;
+  }
+  #bbb{
+    font-size: 4vw;
+  }
+  #itemcart{
+    width: 70vw;
+    /* border: 2px solid red; */
+    border-radius: 1vw;
+  }
+  #itemcart>img{
+    width: 50vw;
+    /* border: 2px solid red; */
+  }
+  #itesmwisht{
+    width: 70vw;
+    /* border: 2px solid red; */
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #itesmwisht>img{
+    width: 50vw;
+    /* border: 2px solid red; */
+  }
+}
 .CardList{
     width: 100%;
     height: auto;
